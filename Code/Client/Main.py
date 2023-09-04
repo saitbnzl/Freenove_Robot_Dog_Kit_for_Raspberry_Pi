@@ -155,7 +155,7 @@ class MyWindow(QMainWindow,Ui_client):
             pass
         else :
             if event.key() == Qt.Key_W:
-                print("W")
+                print("WW")
                 self.forward()
                 self.Key_W=True
             elif event.key() == Qt.Key_S:
