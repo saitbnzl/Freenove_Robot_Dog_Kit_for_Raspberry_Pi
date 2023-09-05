@@ -74,9 +74,9 @@ class Server:
     def reset_server(self):
         self.turn_off_server()
         self.turn_on_server()
-        #self.video=threading.Thread(target=self.transmission_video)
+        self.video=threading.Thread(target=self.transmission_video)
         self.instruction=threading.Thread(target=self.receive_instruction)
-        #self.video.start()
+        self.video.start()
         self.instruction.start()
     def send_data(self,connect,data):
         try:
